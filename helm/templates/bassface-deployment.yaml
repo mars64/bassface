@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "bassface"
+spec:
+  selector:
+    matchLabels:
+      app: "bassface"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: "bassface"
+    spec:
+      containers:
+      - image: mars64/bassface:latest
+        imagePullPolicy: Always
+        name: "bassface"
+        env:
+        - name: BAD_WORDS
+          value: {{ .Values.badWords | quote }}
+        - name: DISCOGS_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: bassface
+              key: discogsToken
+        - name: JOIN
+          value: {{ .Values.join | quote }}
+        - name: NICK
+          value: {{ .Values.nick | quote }}
+        - name: PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: bassface
+              key: ircPassword
+        - name: REPORT_TO
+          value: {{ .Values.reportTo | quote }}
+        - name: SERVER
+          value: {{ .Values.server | quote }}
+        resources:
+          requests:
+            cpu: 10m
+            memory: 8Mi
+          limits:
+            cpu: 100m 
+            memory: 16Mi
