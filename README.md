@@ -1,8 +1,8 @@
 ## bassface
 
-`Bassface` is a general purpose irc bot, written in GoLang, based on [`whyrusleeping/hellabot`](https://github.com/whyrusleeping/hellabot), for use in [Jungletrain.net](https://jungletrain.net/chat).
+`Bassface` is a general purpose irc bot, written in GoLang, based on [`whyrusleeping/hellabot`](https://github.com/whyrusleeping/hellabot), for use in the [Jungletrain.net chat](https://jungletrain.net/chat). Interested in Jungle/Drum and Bass music? Come say hi!
 
-A predecessor to Bassface [used to fart](https://www.reddit.com/r/devops/comments/orctqs/what_do_you_do_with_python/h6hl3wa/). But now it does other things.
+A predecessor to `Bassface` [used to fart](https://www.reddit.com/r/devops/comments/orctqs/what_do_you_do_with_python/h6hl3wa/). But now it does ... other things.
 
 ## capabilities
 
