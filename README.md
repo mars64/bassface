@@ -8,14 +8,14 @@ A predecessor to `Bassface` [used to fart](https://www.reddit.com/r/devops/comme
 
 At the time of this writing, `bassface` can:
 
-* if given permission, kick/ban users for using words that match a static list, and report the action to a list of users
-* hello world
-* randomly respond to other bots in the channel
-* send random ascii boobs based on word matches from other users
-* query the [discogs.com](https://www.discogs.com) database in various ways
-* register itself to `nickserv`
-* post links to listen to the [jungletrain.net](https://www.discogs.com) radio stream
-* respond with some text when some other text matches
+* if given permission, kick/ban users for using words that match a static list, and report the action to a list of users (responds to channel messages with specific content)
+* hello world (`!bassface`)
+* randomly respond to other bots in the channel (responds to channel messages with specific content)
+* send random ascii boobs based on word matches from other users (responds to channel messages with specific content)
+* query the [discogs.com](https://www.discogs.com) database in various ways (!discogs)
+* register itself to `nickserv` (responds to specific direct messages from specific users)
+* post links to listen to the [jungletrain.net](https://www.discogs.com) radio stream (`!streams` or `!pls`)
+* respond with some text when some other text matches (`whagwarn?`)
 
 ## usage
 
